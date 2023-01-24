@@ -1,0 +1,204 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins&display=swap');
+
+/* Body style part */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+/* common style utilise */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+/* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+.player{
+   display: flex;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+
+/* Blog part style start from here */
+.top-blog{
+    margin-top: 30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 30px
+}
+.blog{
+    display: flex;
+
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.description h4{
+    font-size: 20px;
+}
+.description a{
+    text-decoration: none;
+    margin: 0%;
+}
+samp{
+    font-size: 15px;
+    color: #676666;
+}
+.description{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* Lates Course part start from here */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 2%; */
+}
+.course{
+    width: 224px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #d1d0d0 3px 3px 10px;
+}
+.cover-img img{
+    width: 224px;
+    height: 104px;
+}
+.course-info h3{
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+.course-info a{
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+    margin: 0%;
+}
+.icon{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.off-start{
+    color: #ffffff;
+}
+.start-rating{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.start-rating img{
+    width: 12px;
+    height: 12px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background: #FFE4E8;
+    border-radius: 50px;
+    height: 30px;
+    padding: 0 5px;
+    
+}
+.time img{
+    width: 20px;
+    height: 20px;
+}
+.time p{
+     font-size: 15px;
+}
+
+
+/* Media quary */
+/* under 576px */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        justify-items: center;
+    }
+    .player{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 30px
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 2%;
+        justify-items: center;
+    }
+  }
+
+  /* tabtet */
+  @media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        justify-content: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 30px
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 5%;
+    }
+  }
